@@ -30,18 +30,18 @@ public class IHM_Keyboard {
 //	public void moveHero(char Move) throws IHM_KeyboardException {
 //		// TODO - implement IHM_Keyboard.moveHero
 //		
-//		// Récupérer la position du héro
+//		// Rï¿½cupï¿½rer la position du hï¿½ro
 //		Tile tile = this.hero.getPos();
-//		// Utiliser le scanner dans le main, récupérer la touche saisi et la passer en paramètre de movehero
+//		// Utiliser le scanner dans le main, rï¿½cupï¿½rer la touche saisi et la passer en paramï¿½tre de movehero
 //		switch (Move) {
 //		
 //		case 'z':
 //			// Avancer d'une case
-//			// Récupérer la case sur laquelle on veut se déplacer
+//			// Rï¿½cupï¿½rer la case sur laquelle on veut se dï¿½placer
 //			Tile tileToMoveForward = this.map.getTile( i+1 , j);
-//			// On appelle la méthode de la vérification de la case
+//			// On appelle la mï¿½thode de la vï¿½rification de la case
 //			if (this.hero.checkMov(tileToMoveForward)) {
-//				// On lance le déplacement du héro
+//				// On lance le dï¿½placement du hï¿½ro
 //				this.hero.moveHero(tileToMoveForward);
 //				
 //			} else {
@@ -51,12 +51,12 @@ public class IHM_Keyboard {
 //		
 //		case 'q': 
 //			
-//			// Aller à gauche d'une case
-//			// Récupérer la case sur laquelle on veut se déplacer
+//			// Aller ï¿½ gauche d'une case
+//			// Rï¿½cupï¿½rer la case sur laquelle on veut se dï¿½placer
 //			Tile tileToMoveLeft = this.map.getTile( i , j+1 );
-//			// On appelle la méthode de la vérification de la case
+//			// On appelle la mï¿½thode de la vï¿½rification de la case
 //			if (this.hero.checkMov(tileToMoveLeft)) {
-//				// On lance le déplacement du héro
+//				// On lance le dï¿½placement du hï¿½ro
 //				this.hero.moveHero(tileToMoveLeft);
 //				
 //			} else {
@@ -67,12 +67,12 @@ public class IHM_Keyboard {
 //		case 's':
 //			
 //			//Reculer d'une case
-//			// Récupérer la case sur laquelle on veut se déplacer
-//			//TODO: utiliser Grid, les tile n'ont pas de coordonnées
+//			// Rï¿½cupï¿½rer la case sur laquelle on veut se dï¿½placer
+//			//TODO: utiliser Grid, les tile n'ont pas de coordonnï¿½es
 //			Tile tileToMoveBackward = this.map.getTile( i-1 , j );
-//			// On appelle la méthode de la vérification de la case
+//			// On appelle la mï¿½thode de la vï¿½rification de la case
 //			if (this.hero.checkMov(tileToMoveBackward)) {
-//				// On lance le déplacement du héro
+//				// On lance le dï¿½placement du hï¿½ro
 //				this.hero.moveHero(tileToMoveBackward);
 //				
 //			} else {
@@ -82,13 +82,13 @@ public class IHM_Keyboard {
 //			
 //		case 'd': 
 //			
-//			// Aller à droite d'une case
-//			// Récupérer la case sur laquelle on veut se déplacer
-//			//TODO: utiliser Grid, les tile n'ont pas de coordonnées
+//			// Aller ï¿½ droite d'une case
+//			// Rï¿½cupï¿½rer la case sur laquelle on veut se dï¿½placer
+//			//TODO: utiliser Grid, les tile n'ont pas de coordonnï¿½es
 //			Tile tileToMoveRight = this.map.getTile( i , j-1);
-//			// On appelle la méthode de la vérification de la case
+//			// On appelle la mï¿½thode de la vï¿½rification de la case
 //			if (this.hero.checkMov(tileToMoveRight )) {
-//				// On lance le déplacement du héro
+//				// On lance le dï¿½placement du hï¿½ro
 //				this.hero.moveHero(tileToMoveRight );
 //				
 //			} else {
@@ -99,7 +99,7 @@ public class IHM_Keyboard {
 //			break;
 //
 //		default: 
-//			// Dans le cas ou la lettre reçu n'est pas valide, on lève une exception
+//			// Dans le cas ou la lettre reï¿½u n'est pas valide, on lï¿½ve une exception
 //			throw new IHM_KeyboardException();	
 //		}	
 //	}

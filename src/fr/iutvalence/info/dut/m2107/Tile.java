@@ -1,5 +1,7 @@
 package fr.iutvalence.info.dut.m2107;
 
+import fr.iutvalence.info.dut.m2107.Character;
+
 
 
 public class Tile {
@@ -16,9 +18,9 @@ public class Tile {
 	
 	
 	
-	// J'ai renommé occuped en solid, en effet, une case occupée est solide mais toute les cases solides ne sont pas occupée par un personnage
-	//pour savoir si une case est occupée--> tile.occupant!=null
-	// j'ai corrigé en conséquence la méthode isOccuped(), qui est donc toujours utilisable
+	// J'ai renommï¿½ occuped en solid, en effet, une case occupï¿½e est solide mais toute les cases solides ne sont pas occupï¿½e par un personnage
+	//pour savoir si une case est occupï¿½e--> tile.occupant!=null
+	// j'ai corrigï¿½ en consï¿½quence la mï¿½thode isOccuped(), qui est donc toujours utilisable
 	private boolean solid=false;
 	
 
@@ -39,7 +41,7 @@ public class Tile {
 	/**
 	 * 
 	 * @param occupation
-	 * Pour définir une case avec un Character
+	 * Pour dï¿½finir une case avec un Character
 	 */
 	public Tile(boolean b, Character occupant){
 		//this.x=x;
@@ -50,7 +52,7 @@ public class Tile {
 
 	}
 	/**
-	 * Pour définir une case sans Character
+	 * Pour dï¿½finir une case sans Character
 	 * @param b
 	 */
 	public Tile(boolean b) {

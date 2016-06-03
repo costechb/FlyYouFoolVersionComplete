@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Enemy extends Character {
 
-	public Enemy(Tile pos) {
-		super(pos);
+	public Enemy(Tile pos,Grid grid) {
+		super(pos,grid);
 		// TODO Auto-generated constructor stub
 	}
 

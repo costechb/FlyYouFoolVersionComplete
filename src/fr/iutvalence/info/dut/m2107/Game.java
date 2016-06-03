@@ -20,7 +20,7 @@ public class Game extends JPanel {
 	
     @Override
     /**
-     * méthode obligatoire pour dessiner des trucs
+     * mï¿½thode obligatoire pour dessiner des trucs
      * Il faut d'ailleurs utiliser repaint (qui utilise paint)
      */
     public void paint(Graphics g) {
@@ -35,7 +35,7 @@ public class Game extends JPanel {
 		this.map = new Grid();
 		System.out.println("\n This is the level you will play on \n");
 		System.out.println("You have to go on the target block at the end on the level \n");
-		this.hero = new Hero(map.getPosEntree());
+		this.hero = new Hero(map.getPosEntry());
 		System.out.println("\n And this is your hero ! \n");
 		this.enemies = new ArrayList<Enemy>();
 		System.out.println("\n But there is some enemies that should not see you. Be careful ! \n");
@@ -67,7 +67,7 @@ public class Game extends JPanel {
 			
 			hero.setPos(hero.getMov());
 			enemies.forEach(enemy->enemy.setPos(enemy.getMov()));
-			display.showMap(map);
+			map.buildWorld(null);
 		}
 		if(hero.getPos()==map.getPosSortie()){
 			System.out.println("\n YOU WON \n");

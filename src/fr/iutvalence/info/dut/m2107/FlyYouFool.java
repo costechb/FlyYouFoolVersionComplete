@@ -6,8 +6,9 @@ public class FlyYouFool {
 	
 	
 	public static void main(String[] args) throws InterruptedException  {			
-		boolean ok;
 		String name="Jarjar";
+		
+		@SuppressWarnings("unused")
 		Scanner scPseudo = new Scanner(System.in);
 		
 //		do{

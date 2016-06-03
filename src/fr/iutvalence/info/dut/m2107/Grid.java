@@ -9,10 +9,8 @@ public class Grid {
 	Tile[] tabgrid;
 	private int TILESIZE = 32;
 	public Tile[][] map;
-	public static final int MAX_LENGTH_DEFAULT=40;
-	public static final int MAX_WIDTH_DEFAULT=40;
-	private int i;
-	private int j;
+	public final int MAX_LENGTH_DEFAULT=10;
+	public final int MAX_WIDTH_DEFAULT=18;
 	private Tile PosSortie;
 	private Tile PosEntry;
 
@@ -37,15 +35,15 @@ public class Grid {
 					+" #    @#####    # \n"
 					+" #    ######    # \n"
 					+" #  x ######    # \n"
-					+" ##00########00## \n";
+					+" ############0### \n";
 	// #:murs
 	// @:personnage
 	// x:ennemi
 	// 0:porte de sortie
-	// la porte a coté du héros est inaccessible a cause de l'ennemi,pour faire genre tutoriel
+	// la porte a cotï¿½ du hï¿½ros est inaccessible a cause de l'ennemi,pour faire genre tutoriel
 	
-	private int levelwidth = 10;
-	private int levelheight = 18;
+	private static final int levelWidth = 10;
+	private static final int levelLength = 18;
 
 
 
@@ -100,23 +98,6 @@ public class Grid {
 	public  Tile getTile(int i, int j) {
 		
 		return map[i][j];
-	}
-
-	/**
-	 * 
-	 * @param x
-	 * @param y
-	 */
-	// A voir !!!
-	public boolean inGrid(int i, int j) {
-		// TODO - implement Grid.inGrid
-		for (i = 0; i < level1.length(); i++){
-			for (j = 0; j < level1.length(); j++){
-				
-				return true;
-			}
-		}
-		return false;
 	}
 
 

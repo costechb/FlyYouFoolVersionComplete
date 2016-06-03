@@ -16,20 +16,6 @@ public class Hero extends Character {
 		
 	}
 
-	/**
-	 * 
-	 * @param tile
-	 */
-	public void moveHero(Tile tile) {
-		// TODO - implement Hero.moveHero
-
-		this.setMov(tile);	
-		throw new UnsupportedOperationException();
-		// J'ai change le parametre letter en tile
-		// Pour prendre sa position et lui en attribuer une nouvelle
-		
-
-	}
 
 	/**
 	 * 
@@ -49,12 +35,12 @@ public class Hero extends Character {
 		
 		case'z':
 				// Avancer d'une case
-				// Récupérer la case sur laquelle on veut se déplacer
+				// Rï¿½cupï¿½rer la case sur laquelle on veut se dï¿½placer
 				Tile tileToMoveForward = setPos( i+1 , j);	
 				
-				// On appelle la méthode de la vérification de la case
+				// On appelle la mï¿½thode de la vï¿½rification de la case
 				if (checkMov(tileToMoveForward)==true) {
-					// On lance le déplacement du héro
+					// On lance le dï¿½placement du hï¿½ro
 					moveHero(tileToMoveForward);
 					
 				} else {
@@ -63,12 +49,12 @@ public class Hero extends Character {
 			
 		case'q':
 				// Avancer d'une case
-				// Récupérer la case sur laquelle on veut se déplacer
+				// Rï¿½cupï¿½rer la case sur laquelle on veut se dï¿½placer
 				Tile tileToMoveLeft = setPos( i , j+1 );	
 				
-				// On appelle la méthode de la vérification de la case
+				// On appelle la mï¿½thode de la vï¿½rification de la case
 				if (checkMov(tileToMoveLeft)==true) {
-					// On lance le déplacement du héro
+					// On lance le dï¿½placement du hï¿½ro
 					moveHero(tileToMoveLeft);
 					
 				} else {
@@ -77,12 +63,12 @@ public class Hero extends Character {
 	
 		case's':
 				// Avancer d'une case
-				// Récupérer la case sur laquelle on veut se déplacer
+				// Rï¿½cupï¿½rer la case sur laquelle on veut se dï¿½placer
 				Tile tileToMoveBackward = setPos( i-1 , j );	
 				
-				// On appelle la méthode de la vérification de la case
+				// On appelle la mï¿½thode de la vï¿½rification de la case
 				if (checkMov(tileToMoveBackward)==true) {
-					// On lance le déplacement du héro
+					// On lance le dï¿½placement du hï¿½ro
 					moveHero(tileToMoveBackward);
 					
 				} else {
@@ -91,12 +77,12 @@ public class Hero extends Character {
 			
 		case'd':
 				// Avancer d'une case
-				// Récupérer la case sur laquelle on veut se déplacer
+				// Rï¿½cupï¿½rer la case sur laquelle on veut se dï¿½placer
 				Tile tileToMoveRight = setPos( i , j-1);	
 				
-				// On appelle la méthode de la vérification de la case
+				// On appelle la mï¿½thode de la vï¿½rification de la case
 				if (checkMov(tileToMoveRight)==true) {
-					// On lance le déplacement du héro
+					// On lance le dï¿½placement du hï¿½ro
 					moveHero(tileToMoveRight);
 					
 				} else {
